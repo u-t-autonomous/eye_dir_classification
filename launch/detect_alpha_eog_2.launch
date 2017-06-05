@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<launch>
+<group ns="openbci">
+
+  <node name="env_node" pkg="openbci" type="env_node.py" output="screen">
+  </node>
+  <node name="detect_eog" pkg="openbci" type="detect_eog.py" output="screen">
+  </node>
+  <node name="plotter" pkg="openbci" type="plotter.py" output="screen">
+  </node>
+  <node name="publish_measurements" pkg="openbci" type="publish_measurements.py" output="screen">
+    <param name="port" value="/dev/ttyUSB0" />
+    <param name="baud" value="115200" />
+    <param name="filter_data" value="True" />
+    <param name="scaled_output" value="True" />
+    <param name="daisy_module" value="False" />
+    <param name="log" value="True" />
+    <param name="timeout" value="None" />
+  </node>
+
+</group>
+</launch>
