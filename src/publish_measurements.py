@@ -48,7 +48,7 @@ class Node():
 	        log = log,
 	        timeout = timeout)
 		
-		self.f = open('/home/siddarthkaki/Desktop/data_main.txt','w')
+		self.f = open('/home/kasun/Desktop/data_main.txt','w')
 		 #thumb - 1, index - 2, middle - 3, ring - 4, pinky - 5
 
 		#uncomment for five finger setting
@@ -56,7 +56,7 @@ class Node():
 
 
 		self.f.write(str('time, chan4, chan5, label')+'\n')
-		self.f2 = open('/home/siddarthkaki/new_ws/src/openbci/src/label.txt', 'w')
+		self.f2 = open('/home/kasun/new_ws/src/openbci/src/label.txt', 'w')
 		self.f2.write(str('time, label')+'\n')
 	
 

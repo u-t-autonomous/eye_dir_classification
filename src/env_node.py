@@ -62,7 +62,7 @@ def main():
             trial += 1
             time_steps = 0
             num_error = 0
-            sim = Simulation("/home/siddarthkaki/new_ws/src/openbci/src/config.txt") # absolute path is better            
+            sim = Simulation("/home/kasun/new_ws/src/openbci/src/config.txt") # absolute path is better            
             sleep(.2)
             subs = rospy.Subscriber('cmd', Action, callback)
             log = Sim()
@@ -83,6 +83,6 @@ if __name__ == '__main__':
     trial = 1
     # sleep(20)
     print 'first'
-    sim = Simulation("/home/siddarthkaki/new_ws/src/openbci/src/config.txt") # absolute path is better
+    sim = Simulation("/home/kasun/new_ws/src/openbci/src/config.txt") # absolute path is better
     # sleep(10)
     main()

@@ -1,0 +1,7 @@
+HEIGHT: 15
+WIDTH: 15
+BLOCK: agent 7 7
+BLOCK: fixed_obstacle 7 4
+BLOCK: fixed_obstacle 10 7
+BLOCK: fixed_obstacle 7 10
+BLOCK: fixed_obstacle 4 7

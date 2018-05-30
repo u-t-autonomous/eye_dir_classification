@@ -12,7 +12,7 @@ def filereader():
 	rospy.init_node('talker', anonymous=True)
 	rate = rospy.Rate(100)
 	msg = BCIuVolts()
-	f = open('/home/siddarthkaki/Desktop/EOG_data_files_2/5-23-17/data_main_2.txt','r')
+	f = open('/home/kasun/Desktop/EOG_data_files_2/5-23-17/data_main_2.txt','r')
 	current_line = f.readline()
 	
 	while not rospy.is_shutdown():

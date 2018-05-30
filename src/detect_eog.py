@@ -163,28 +163,7 @@ class Detect():
 			clf_RL = 'stay'
 			mag = 0
 
-		# print('classifying')
-		# sample = list1
-		# min_val = min(sample)
-		# min_index = sample.index(min_val)
-		# max_val = max(sample)
-		# max_index = sample.index(max_val)
-		# value = max_val - min_val
 
-
-		# if value > threshold_blink:
-		# 	clf_RL = 'stay'
-		# 	mag = value
-		# elif value > threshold_left and min_index > max_index:
-		# 	clf_RL = 'east'
-		# 	mag = value
-		# elif value > threshold_right and min_index < max_index:
-		# 	clf_RL = 'west'
-		# 	mag = value
-		# else:
-		# 	clf_RL = 'None'
-		# 	mag = 0
-			# print 'nothing'
 		self.list4_clf = []
 		return (clf_RL, mag)
 
